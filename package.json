@@ -1,6 +1,6 @@
 {
     "name": "@tsforge7/heleket-sdk-nestjs",
-    "version": "0.1.0",
+    "version": "0.1.4",
     "main": "build/index.js",
     "types": "build/index.d.ts",
     "files": [
