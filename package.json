@@ -1,0 +1,64 @@
+{
+    "name": "@tsforge7/heleket-sdk-nestjs",
+    "version": "0.1.0",
+    "main": "build/index.js",
+    "types": "build/index.d.ts",
+    "files": [
+        "build"
+    ],
+    "license": "ISC",
+    "description": "heleket sdk for nestjs",
+    "scripts": {
+        "prepublish": "rm -rf build && tsc -p tsconfig.build.json",
+        "build": "tsc -p tsconfig.build.json",
+        "typecheck": "tsc --noEmit",
+        "test": "vitest run",
+        "test:watch": "vitest",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "format": "prettier --write \"src/**/*.ts\" \"*.md\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tsforge/heleket-sdk-nestjs"
+    },
+    "homepage": "https://github.com/tsforge/heleket-sdk-nestjs#readme",
+    "bugs": {
+        "url": "https://github.com/tsforge/heleket-sdk-nestjs/issues"
+    },
+    "peerDependencies": {
+        "@nestjs/common": ">=10.0.0",
+        "@tsforge7/heleket-sdk": ">=0.0.2"
+    },
+    "author": "tsforge",
+    "engines": {
+        "node": ">=18"
+    },
+    "keywords": [
+        "sdk",
+        "typescript",
+        "api",
+        "client",
+        "network",
+        "nestJs",
+        "heleket",
+        "heleket-sdk",
+        "heleket-sdk-nestjs"
+    ],
+    "devDependencies": {
+        "@eslint/js": "^10.0.1",
+        "@nestjs/common": "^11.1.0",
+        "@tsforge7/heleket-sdk": "^0.0.2",
+        "@types/node": "^26.1.2",
+        "eslint": "^10.8.0",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.6",
+        "prettier": "^3.9.6",
+        "typescript": "6.0",
+        "typescript-eslint": "^8.65.0",
+        "vitest": "^4.1.11"
+    },
+    "overrides": {
+        "vite": "^7.0.0"
+    }
+}
